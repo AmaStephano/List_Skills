@@ -16,9 +16,8 @@ def all_odd(numbers):
         >>> all_odd([2, -6, 8])
         []
     """
-
     if numbers:
-        new_list = [number for number in numbers if number/2 != 0]
+        new_list = [number for number in numbers if number % 2 != 0]
         return new_list
 
 
@@ -120,8 +119,12 @@ def largest_n_items(items, n):
         >>> largest_n_items([3, 3, 3, 2, 1], 2)
         [3, 3]
     """
-
-    return []
+    if n != 0:
+        length = len(items)
+        sorted_list = sorted(items)
+        return sorted_list[length - n:]
+    else:
+        return []
 
 
 #####################################################################
