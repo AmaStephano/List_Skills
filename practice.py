@@ -418,16 +418,16 @@ def find_letter_indices(words, letter):
         return
 
     else:
-        integer_list = []
+        indices_list = []
         for word in words:
             for index, char in enumerate(word):
                 in_word = False
                 if char == letter:
-                    integer_list.append(index)
+                    indices_list.append(index)
                     in_word = True
         if not in_word:
-            integer_list.append(None)
-        return integer_list
+            indices_list.append(None)
+        return indices_list
 
 #####################################################################
 # END OF PRACTICE: You can ignore everything below.

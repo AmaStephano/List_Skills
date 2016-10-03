@@ -17,8 +17,8 @@ def all_odd(numbers):
         []
     """
     if numbers:
-        new_list = [number for number in numbers if number % 2 != 0]
-        return new_list
+        odd_nums_list = [number for number in numbers if number % 2 != 0]
+        return odd_nums_list
 
 
 def print_indices(items):
@@ -71,13 +71,13 @@ def foods_in_common(foods1, foods2):
         []
 
     """
-    new_list = []
+    common_list = []
     set_foods2 = set(foods2)
     for food in foods1:
         if food in set_foods2:
-            new_list.append(food)
+            common_list.append(food)
 
-    return new_list
+    return common_list
 
 
 def every_other_item(items):
@@ -94,8 +94,8 @@ def every_other_item(items):
        ['you', 'are', 'good', 'at', 'code']
     """
 
-    new_list = items[0::2]
-    return new_list
+    every_other_list = items[0::2]
+    return every_other_list
 
 
 def largest_n_items(items, n):
